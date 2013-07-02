@@ -1,3 +1,3 @@
 WWCmod
 ======
-This is an ongoing mod prject for homebrew entertainment.
+This is an ongoing mod project for homebrew entertainment.

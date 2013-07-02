@@ -18,6 +18,10 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 @NetworkMod(clientSideRequired=true,serverSideRequired=false)
 
 public class WWCMod {
+	
+//toolMaterial
+public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 10, 20.0F, 3, 15);	
+
 //blocks
 public static Block copperore;
 public static Block tinore;
@@ -35,9 +39,16 @@ public static Item orichalcum;
 public static Item bronze;
 public static Item steel;
 public static Item titanium;
+//tools
+public static Item MithrilAxe;
+public static Item MithrilShovel;
+public static Item MithrilSword;
+public static Item MithrilPickaxe;
+public static Item MithrilHoe;
+
 @Init
 public void load(FMLInitializationEvent event){
-	// world gen
+	// world generation
 		GameRegistry.registerWorldGenerator(new WorldGeneratorWWCMod());
 	// ore blocks
 	    copperore= new CopperOre(2501, "copperore").setUnlocalizedName("copperore").setHardness(2.0F).setStepSound(Block.soundMetalFootstep).setResistance(10.0F);
@@ -91,6 +102,18 @@ public void load(FMLInitializationEvent event){
 		
 		titanium = new Ingot(2515).setUnlocalizedName("titanium");
 		LanguageRegistry.addName(titanium, "Titanium Ingot");
+		
+	//tools
+		MithrilAxe = new WWCModAxe(2516, EnumToolMaterialMithril).setUnlocalizedName("mithrilaxe");
+		MithrilShovel = new WWCModShovel(2517, EnumToolMaterialMithril).setUnlocalizedName("mithrilshovel");
+		MithrilPickaxe = new WWCModPickaxe(2518, EnumToolMaterialMithril).setUnlocalizedName("mithrilpick");
+		MithrilHoe = new WWCModHoe(2519, EnumToolMaterialMithril).setUnlocalizedName("mithrilhoe");
+		MithrilSword = new WWCModSword(2520, EnumToolMaterialMithril).setUnlocalizedName("mithrilsword");
+		LanguageRegistry.addName(MithrilAxe, "Mithril Axe");
+		LanguageRegistry.addName(MithrilShovel, "Mithril Spade");
+		LanguageRegistry.addName(MithrilPickaxe, "Mithril Pickaxe");
+		LanguageRegistry.addName(MithrilSword, "Mithril Sword");
+		
 }
 }
 

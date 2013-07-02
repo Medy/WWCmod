@@ -26,4 +26,46 @@ public class WorldGeneratorWWCMod implements IWorldGenerator {
 		int Ycoord = random.nextInt(16);
 
 		(new WorldGenMinable(WWCMod.copperore.blockID, 8)).generate(world, random, Xcoord, Ycoord, Zcoord);
-		}}}
+		}
+		
+		for(int i =0; i<10;i++){
+			int Xcoord = BlockX + random.nextInt(16);
+			int Zcoord = BlockZ + random.nextInt(16);
+			int Ycoord = random.nextInt(16);
+
+			(new WorldGenMinable(WWCMod.tinore.blockID, 8)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			}	
+		
+		for(int i =0; i<10;i++){
+			int Xcoord = BlockX + random.nextInt(16);
+			int Zcoord = BlockZ + random.nextInt(16);
+			int Ycoord = random.nextInt(16);
+
+			(new WorldGenMinable(WWCMod.silverore.blockID, 8)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			}
+		
+		for(int i =0; i<10;i++){
+			int Xcoord = BlockX + random.nextInt(16);
+			int Zcoord = BlockZ + random.nextInt(16);
+			int Ycoord = random.nextInt(16);
+
+			(new WorldGenMinable(WWCMod.platinumore.blockID, 8)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			}
+		
+		for(int i =0; i<10;i++){
+			int Xcoord = BlockX + random.nextInt(16);
+			int Zcoord = BlockZ + random.nextInt(16);
+			int Ycoord = random.nextInt(16);
+
+			(new WorldGenMinable(WWCMod.mithrilore.blockID, 8)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			}
+		
+		for(int i =0; i<10;i++){
+			int Xcoord = BlockX + random.nextInt(16);
+			int Zcoord = BlockZ + random.nextInt(16);
+			int Ycoord = random.nextInt(16);
+
+			(new WorldGenMinable(WWCMod.orichalcumore.blockID, 8)).generate(world, random, Xcoord, Ycoord, Zcoord);
+			}
+		
+	}}
