@@ -7,6 +7,7 @@ public class WWCModHoe extends ItemHoe {
 
 public WWCModHoe(int ItemID, EnumToolMaterial material){
 super(ItemID, material);
+setCreativeTab(WWCMod.WWCTab);
 }
 
 

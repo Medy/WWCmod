@@ -5,6 +5,6 @@ import net.minecraft.creativetab.CreativeTabs;
 public class Ingot extends Item {
 	public Ingot(int id) {
 		super(id); //Returns super constructor: par1 is ID
-		setCreativeTab(CreativeTabs.tabMaterials); //Tells the game what creative mode tab it goes in
+		setCreativeTab(WWCMod.WWCTab); //Tells the game what creative mode tab it goes in
 		}
 		}

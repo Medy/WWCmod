@@ -7,6 +7,7 @@ public class WWCModShovel extends ItemSpade {
 
 public WWCModShovel(int ItemID, EnumToolMaterial material){
 super(ItemID, material);
+setCreativeTab(WWCMod.WWCTab);
 }
 
 

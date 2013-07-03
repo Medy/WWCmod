@@ -7,6 +7,7 @@ public class WWCModPickaxe extends ItemPickaxe {
 
 public WWCModPickaxe(int ItemID, EnumToolMaterial material){
 super(ItemID, material);
+setCreativeTab(WWCMod.WWCTab);
 }
 
 

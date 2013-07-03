@@ -7,6 +7,7 @@ public class WWCModAxe extends ItemAxe {
 
 public WWCModAxe(int ItemID, EnumToolMaterial material){
 super(ItemID, material);
+setCreativeTab(WWCMod.WWCTab);
 }
 
 

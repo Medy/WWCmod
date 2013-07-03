@@ -2,6 +2,7 @@ package WWCmod;
 
 import SCMowns.Tutorial.GemItems;
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
@@ -18,33 +19,33 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 @NetworkMod(clientSideRequired=true,serverSideRequired=false)
 
 public class WWCMod {
-	
-//toolMaterial
-public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 10, 20.0F, 3, 15);	
-
-//blocks
-public static Block copperore;
-public static Block tinore;
-public static Block silverore;
-public static Block platinumore;
-public static Block mithrilore;
-public static Block orichalcumore;
-//items
-public static Item copper;
-public static Item tin;
-public static Item silver;
-public static Item platinum;
-public static Item mithril;
-public static Item orichalcum;
-public static Item bronze;
-public static Item steel;
-public static Item titanium;
-//tools
-public static Item MithrilAxe;
-public static Item MithrilShovel;
-public static Item MithrilSword;
-public static Item MithrilPickaxe;
-public static Item MithrilHoe;
+	//creative tab
+	public static CreativeTabs WWCTab = new TabWWCMod(CreativeTabs.getNextID(), "Wonder World Craft Mod");
+	//toolMaterial
+	public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 10, 20.0F, 3, 15);	
+	//blocks
+	public static Block copperore;
+	public static Block tinore;
+	public static Block silverore;
+	public static Block platinumore;
+	public static Block mithrilore;
+	public static Block orichalcumore;
+	//items
+	public static Item copper;
+	public static Item tin;
+	public static Item silver;
+	public static Item platinum;
+	public static Item mithril;
+	public static Item orichalcum;
+	public static Item bronze;
+	public static Item steel;
+	public static Item titanium;
+	//tools
+	public static Item MithrilAxe;
+	public static Item MithrilShovel;
+	public static Item MithrilSword;
+	public static Item MithrilPickaxe;
+	public static Item MithrilHoe;
 
 @Init
 public void load(FMLInitializationEvent event){
@@ -113,6 +114,7 @@ public void load(FMLInitializationEvent event){
 		LanguageRegistry.addName(MithrilShovel, "Mithril Spade");
 		LanguageRegistry.addName(MithrilPickaxe, "Mithril Pickaxe");
 		LanguageRegistry.addName(MithrilSword, "Mithril Sword");
+		LanguageRegistry.addName(MithrilHoe, "Mithril Hoe");
 		
 }
 }

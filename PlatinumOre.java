@@ -12,7 +12,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class PlatinumOre extends Block {
 	public PlatinumOre(int par1, String texture) {
 		super(par1, Material.rock);
-		setCreativeTab(CreativeTabs.tabBlock); //place in creative tabs
+		setCreativeTab(WWCMod.WWCTab); //place in creative tabs
 		}
 		//drops when broken with pickaxe
 		public int idDropped(int par1, Random par2Random, int par3)

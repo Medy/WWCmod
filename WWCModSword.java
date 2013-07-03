@@ -7,6 +7,7 @@ public class WWCModSword extends ItemAxe {
 
 public WWCModSword(int ItemID, EnumToolMaterial material){
 super(ItemID, material);
+setCreativeTab(WWCMod.WWCTab);
 }
 
 
