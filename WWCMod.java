@@ -1,6 +1,5 @@
 package WWCmod;
 
-import SCMowns.Tutorial.GemItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
@@ -22,7 +21,7 @@ public class WWCMod {
 	//creative tab
 	public static CreativeTabs WWCTab = new TabWWCMod(CreativeTabs.getNextID(), "Wonder World Craft Mod");
 	//toolMaterial
-	public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 10, 20.0F, 3, 15);	
+	public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 250, 6.0F, 2, 15);	
 	//blocks
 	public static Block copperore;
 	public static Block tinore;
@@ -116,7 +115,18 @@ public void load(FMLInitializationEvent event){
 		LanguageRegistry.addName(MithrilSword, "Mithril Sword");
 		LanguageRegistry.addName(MithrilHoe, "Mithril Hoe");
 		
-}
+	//crafting
+		GameRegistry.addRecipe(new ItemStack(MithrilAxe,1), new Object[]{
+			"MM ","MS "," S ",'M',mithril, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(MithrilShovel,1), new Object[]{
+			" M "," S "," S ",'M',mithril, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(MithrilPickaxe,1), new Object[]{
+			"MMM"," S "," S ",'M',mithril, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(MithrilHoe,1), new Object[]{
+			"MM "," S "," S ",'M',mithril, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(MithrilSword,1), new Object[]{
+			" M "," M "," S ",'M',mithril, 'S',Item.stick,});
+}	
 }
 
 
