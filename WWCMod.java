@@ -21,7 +21,8 @@ public class WWCMod {
 	//creative tab
 	public static CreativeTabs WWCTab = new TabWWCMod(CreativeTabs.getNextID(), "Wonder World Craft Mod");
 	//toolMaterial
-	public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 250, 6.0F, 2, 15);	
+	public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 250, 6.0F, 2, 15);
+	public static EnumToolMaterial EnumToolMaterialOrichalcum= EnumHelper.addToolMaterial("HighPower", 3, 1561, 20.0F, 3, 15);
 	//blocks
 	public static Block copperore;
 	public static Block tinore;
@@ -45,6 +46,11 @@ public class WWCMod {
 	public static Item MithrilSword;
 	public static Item MithrilPickaxe;
 	public static Item MithrilHoe;
+	public static Item OrichalcumAxe;
+	public static Item OrichalcumShovel;
+	public static Item OrichalcumSword;
+	public static Item OrichalcumPickaxe;
+	public static Item OrichalcumHoe;
 
 @Init
 public void load(FMLInitializationEvent event){
@@ -54,7 +60,7 @@ public void load(FMLInitializationEvent event){
 	    copperore= new CopperOre(2501, "copperore").setUnlocalizedName("copperore").setHardness(2.0F).setStepSound(Block.soundMetalFootstep).setResistance(10.0F);
 		GameRegistry.registerBlock(copperore, "copperore");
 		LanguageRegistry.addName(copperore, "Copper Ore");
-		
+
 		tinore= new TinOre(2502, "tinore").setUnlocalizedName("tinore").setHardness(2.0F).setStepSound(Block.soundMetalFootstep).setResistance(10.0F);
 		GameRegistry.registerBlock(tinore, "tinore");
 		LanguageRegistry.addName(tinore, "Tin Ore");
@@ -115,6 +121,17 @@ public void load(FMLInitializationEvent event){
 		LanguageRegistry.addName(MithrilSword, "Mithril Sword");
 		LanguageRegistry.addName(MithrilHoe, "Mithril Hoe");
 		
+		OrichalcumAxe = new WWCModAxe(2521, EnumToolMaterialOrichalcum).setUnlocalizedName("orichalcumaxe");
+		OrichalcumShovel = new WWCModShovel(2522, EnumToolMaterialOrichalcum).setUnlocalizedName("orichalcumshovel");
+		OrichalcumPickaxe = new WWCModPickaxe(2523, EnumToolMaterialOrichalcum).setUnlocalizedName("orichalcumpick");
+		OrichalcumHoe = new WWCModHoe(2524, EnumToolMaterialOrichalcum).setUnlocalizedName("orichalcumhoe");
+		OrichalcumSword = new WWCModSword(2525, EnumToolMaterialOrichalcum).setUnlocalizedName("orichalcumsword");
+		LanguageRegistry.addName(OrichalcumAxe, "Orichalcum Axe");
+		LanguageRegistry.addName(OrichalcumShovel, "Orichalcum Spade");
+		LanguageRegistry.addName(OrichalcumPickaxe, "Orichalcum Pickaxe");
+		LanguageRegistry.addName(OrichalcumSword, "Orichalcum Sword");
+		LanguageRegistry.addName(OrichalcumHoe, "Orichalcum Hoe");
+		
 	//crafting
 		GameRegistry.addRecipe(new ItemStack(MithrilAxe,1), new Object[]{
 			"MM ","MS "," S ",'M',mithril, 'S',Item.stick,});
@@ -126,7 +143,26 @@ public void load(FMLInitializationEvent event){
 			"MM "," S "," S ",'M',mithril, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(MithrilSword,1), new Object[]{
 			" M "," M "," S ",'M',mithril, 'S',Item.stick,});
+		
+		GameRegistry.addRecipe(new ItemStack(OrichalcumAxe,1), new Object[]{
+			"OO ","OS "," S ",'O',orichalcum, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(OrichalcumShovel,1), new Object[]{
+			" O "," S "," S ",'O',orichalcum, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(OrichalcumPickaxe,1), new Object[]{
+			"OOO"," S "," S ",'O',orichalcum, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(OrichalcumHoe,1), new Object[]{
+			"OO "," S "," S ",'O',orichalcum, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(OrichalcumSword,1), new Object[]{
+			" O "," O "," S ",'O',orichalcum, 'S',Item.stick,});
+	//smelting
+		GameRegistry.addSmelting(copperore.blockID, new ItemStack(copper,1), 2.0F);
+		GameRegistry.addSmelting(tinore.blockID, new ItemStack(tin,1), 2.0F);
+		GameRegistry.addSmelting(silverore.blockID, new ItemStack(silver,1), 2.0F);
+		GameRegistry.addSmelting(platinumore.blockID, new ItemStack(platinum,1), 2.0F);
+		GameRegistry.addSmelting(mithrilore.blockID, new ItemStack(mithril,1), 2.0F);
+		GameRegistry.addSmelting(orichalcumore.blockID, new ItemStack(orichalcum,1), 2.0F);
 }	
+
 }
 
 
