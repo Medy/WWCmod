@@ -1,9 +1,10 @@
 package WWCmod;
 
 import java.util.Random;
-import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -23,6 +24,9 @@ public class TinOre extends Block{
 		{
 		return 1;
 }
-		public String getTextureFile(){
-			return "/textures/items/tinore.png";
-			}}
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IconRegister reg){
+	this.blockIcon = reg.registerIcon("wwcmod:"+ (this.getUnlocalizedName().substring(5)));
+	}
+}
