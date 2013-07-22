@@ -51,6 +51,63 @@ public class WWCMod {
 	public static Item OrichalcumSword;
 	public static Item OrichalcumPickaxe;
 	public static Item OrichalcumHoe;
+	//anvil
+	public static Item IronToolParts;
+	public static Item IronWeaponParts;
+	public static Item IronAxe;
+	public static Item IronShovel;
+	public static Item IronPickaxe;
+	public static Item IronHoe;
+	public static Item IronSword;
+	public static Item SteelToolParts;
+	public static Item SteelWeaponParts;
+	public static Item SteelAxe;
+	public static Item SteelShovel;
+	public static Item SteelPickaxe;
+	public static Item SteelHoe;
+	public static Item SteelSword;
+	public static Item Pliers;
+	public static Item IronHammer;
+	public static Item SteelHammer;
+	public static Item IronArrows;
+	public static Item SteelArrows;
+	//experts anvil
+	public static Item BronzeToolParts;
+	public static Item PlatinumToolParts;
+	public static Item GoldToolParts;
+	public static Item BronzeWeaponParts;
+	public static Item PlatinumWeaponParts;
+	public static Item GoldWeaponParts;
+	public static Item BronzeAxe;
+	public static Item BronzeShovel;
+	public static Item BronzePickaxe;
+	public static Item BronzeHoe;
+	public static Item BronzeSword;
+	public static Item PlatinumAxe;
+	public static Item PlatinumShovel;
+	public static Item PlatinumPickaxe;
+	public static Item PlatinumHoe;
+	public static Item PlatinumSword;
+	public static Item GoldAxe;
+	public static Item GoldShovel;
+	public static Item GoldPickaxe;
+	public static Item GoldHoe;
+	public static Item GoldSword;
+	public static Item BronzeHammer;
+	public static Item PlatinumHammer;
+	public static Item TitaniumHammer;
+	public static Item MithrilToolParts;
+	public static Item MithrilWeaponParts;
+	public static Item MithrilTools;
+	public static Item MithrilWeapons;
+	public static Item MithrilHammer;
+	//masters anvil
+	public static Item OrichalcumHammer;
+	public static Item OrichalcumToolParts;
+	public static Item OrichalcumWeaponParts;
+	public static Item OrichalcumTools;
+	public static Item OrichalcumWeapons;
+	public static Item Mjolnir;
 
 @EventHandler
 public void preInit(FMLInitializationEvent event){
