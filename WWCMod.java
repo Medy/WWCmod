@@ -112,6 +112,33 @@ public class WWCMod {
 	public static Item OrichalcumTools;
 	public static Item OrichalcumWeapons;
 	public static Item Mjolnir;
+	//machines
+	public static Block MineralGrinder;
+	public static Block ElectricFoundry;
+	public static Block IndustrialFoundry;
+	public static Block Analyzer;
+	public static Block CoalGenerator;
+	public static Block PowerCell;
+	public static Block AdvancedWindmill;
+	public static Block HydroTurbine;
+	public static Block SolarPanel;
+	public static Block GeneticAnalyzer;
+	public static Block GeneticIncubator;
+	public static Block Computer;
+	public static Block ChargeAbsorber;
+	public static Block GPS;
+	public static Block TransportPipes;
+	public static Block ConveyorBelts;
+	//components
+	public static Item Wire;
+	public static Item SolarCollector;
+	public static Item CircuitBoards;
+	public static Item MachineCasing;
+	public static Item LightingRod;
+	public static Item Compost;
+	public static Block Scaffolding;
+	public static Item Wax;
+	public static Block Candle;
 
 @EventHandler
 public void preInit(FMLInitializationEvent event){
