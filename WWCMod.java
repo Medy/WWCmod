@@ -52,6 +52,7 @@ public class WWCMod {
 	public static Item OrichalcumPickaxe;
 	public static Item OrichalcumHoe;
 	//anvil
+	public static Block Anvil;
 	public static Item IronToolParts;
 	public static Item IronWeaponParts;
 	public static Item IronAxe;
@@ -72,6 +73,7 @@ public class WWCMod {
 	public static Item IronArrows;
 	public static Item SteelArrows;
 	//experts anvil
+	public static Block ExpertsAnvil;
 	public static Item BronzeToolParts;
 	public static Item BronzeWeaponParts;
 	public static Item BronzeAxe;
@@ -103,6 +105,7 @@ public class WWCMod {
 	public static Item MithrilWeapons;
 	public static Item MithrilHammer;
 	//masters anvil
+	public static Block MatersAnvil;
 	public static Item OrichalcumHammer;
 	public static Item OrichalcumToolParts;
 	public static Item OrichalcumWeaponParts;
