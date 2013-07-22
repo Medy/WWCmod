@@ -139,6 +139,35 @@ public class WWCMod {
 	public static Block Scaffolding;
 	public static Item Wax;
 	public static Block Candle;
+	//winderness
+	public static Block Waterwhell; 
+	public static Block Windmill;
+	public static Block GrindingWheel;
+	public static Block CompostPoweredGenerator;
+	public static Block CreatureTracker;
+	public static Block TrackingDevice;
+	public static Block CreatureAnalyzer;
+	public static Block ResinExtractor;
+	public static Block SurvivalKit;
+	public static Block SurvivalSupplies;
+	public static Block NewFoodRecipes;
+	public static Block AutomatedTreeChopper;
+	public static Block Gatherer;
+	public static Block CrudeTools;
+	//advanced enchanting
+	public static Block ArcaneEnchantingTable;
+	public static Item SpellBook;
+	public static Item SpellBoookEnchanted;
+	public static Item AncientScroll;
+	public static Item AnalyzedScroll;
+	public static Block ScrollReasearchTable;
+	public static Item WeaponPartEnchants;
+	public static Item ArcaneMetals;
+	//tools
+	public static Item Wrench;
+	public static Item WireCutters;
+	public static Item PowerTools;
+
 
 @EventHandler
 public void preInit(FMLInitializationEvent event){
