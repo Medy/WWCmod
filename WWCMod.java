@@ -21,8 +21,13 @@ public class WWCMod {
 	//creative tab
 	public static CreativeTabs WWCTab = new TabWWCMod(CreativeTabs.getNextID(), "Wonder World Craft Mod");
 	//toolMaterial
-	public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("LowPower", 2, 250, 6.0F, 2, 15);
-	public static EnumToolMaterial EnumToolMaterialOrichalcum= EnumHelper.addToolMaterial("HighPower", 3, 1561, 20.0F, 3, 15);
+	public static EnumToolMaterial EnumToolMaterialMithril= EnumHelper.addToolMaterial("Mithril", 2, 250, 6.0F, 2, 15);
+	public static EnumToolMaterial EnumToolMaterialOrichalcum= EnumHelper.addToolMaterial("Orichalcum", 3, 1561, 20.0F, 3, 15);
+	public static EnumToolMaterial EnumToolMaterialIron= EnumHelper.addToolMaterial("LowPowerIron", 2, 250, 6.0F, 2, 15);
+	public static EnumToolMaterial EnumToolMaterialSteel= EnumHelper.addToolMaterial("Steel", 2, 250, 6.0F, 2, 15);
+	public static EnumToolMaterial EnumToolMaterialBronze= EnumHelper.addToolMaterial("Bronze", 2, 250, 6.0F, 2, 15);
+	public static EnumToolMaterial EnumToolMaterialPlatinum= EnumHelper.addToolMaterial("Platinum", 2, 250, 6.0F, 2, 15);
+	public static EnumToolMaterial EnumToolMaterialGold= EnumHelper.addToolMaterial("Gold", 2, 250, 6.0F, 2, 15);
 	//blocks
 	public static Block copperore;
 	public static Block tinore;
@@ -249,6 +254,60 @@ public void preInit(FMLInitializationEvent event){
 		LanguageRegistry.addName(OrichalcumSword, "Orichalcum Sword");
 		LanguageRegistry.addName(OrichalcumHoe, "Orichalcum Hoe");
 		
+		IronAxe = new WWCModAxe(2526,EnumToolMaterialIron).setUnlocalizedName("ironaxe");
+		IronShovel = new WWCModShovel(2527,EnumToolMaterialIron).setUnlocalizedName("ironshovel");
+		IronPickaxe = new WWCModPickaxe(2528,EnumToolMaterialIron).setUnlocalizedName("ironpickaxe");
+		IronHoe = new WWCModHoe(2529,EnumToolMaterialIron).setUnlocalizedName("ironhoe");
+		IronSword = new WWCModSword(2530,EnumToolMaterialIron).setUnlocalizedName("ironsword");
+		LanguageRegistry.addName(IronAxe, "Iron Axe");
+		LanguageRegistry.addName(IronShovel, "Iron Shovel");
+		LanguageRegistry.addName(IronPickaxe, "Iron Pickaxe");
+		LanguageRegistry.addName(IronHoe, "Iron Hoe");
+		LanguageRegistry.addName(IronSword, "Iron Sword");
+		
+		SteelAxe = new WWCModAxe(2531,EnumToolMaterialSteel).setUnlocalizedName("steelaxe");
+		SteelShovel = new WWCModShovel(2532,EnumToolMaterialSteel).setUnlocalizedName("steelshovel");
+		SteelPickaxe = new WWCModPickaxe(2533,EnumToolMaterialSteel).setUnlocalizedName("steelpickaxe");
+		SteelHoe = new WWCModHoe(2534,EnumToolMaterialSteel).setUnlocalizedName("steelhoe");
+		SteelSword = new WWCModSword(2535,EnumToolMaterialSteel).setUnlocalizedName("steelsword");
+		LanguageRegistry.addName(SteelAxe, "Steel Axe");
+		LanguageRegistry.addName(SteelShovel, "Steel Shovel");
+		LanguageRegistry.addName(SteelPickaxe, "Steel Pickaxe");
+		LanguageRegistry.addName(SteelHoe, "Steel Hoe");
+		LanguageRegistry.addName(SteelSword, "Steel Sword");
+		
+		BronzeAxe = new WWCModAxe(2536,EnumToolMaterialBronze).setUnlocalizedName("bronzeaxe");
+		BronzeShovel = new WWCModShovel(2537,EnumToolMaterialBronze).setUnlocalizedName("bronzeshovel");
+		BronzePickaxe = new WWCModPickaxe(2538,EnumToolMaterialBronze).setUnlocalizedName("bronzepickaxe");
+		BronzeHoe = new WWCModHoe(2539,EnumToolMaterialBronze).setUnlocalizedName("bronzehoe");
+		BronzeSword = new WWCModSword(2540,EnumToolMaterialBronze).setUnlocalizedName("bronzesword");
+		LanguageRegistry.addName(BronzeAxe, "Bronze Axe");
+		LanguageRegistry.addName(BronzeShovel, "Bronze Shovel");
+		LanguageRegistry.addName(BronzePickaxe, "Bronze Pickaxe");
+		LanguageRegistry.addName(BronzeHoe, "Bronze Hoe");
+		LanguageRegistry.addName(BronzeSword, "Bronze Sword");
+		
+		PlatinumAxe = new WWCModAxe(2541,EnumToolMaterialPlatinum).setUnlocalizedName("platinumaxe");
+		PlatinumShovel = new WWCModShovel(2542,EnumToolMaterialPlatinum).setUnlocalizedName("platinumshovel");
+		PlatinumPickaxe = new WWCModPickaxe(2543,EnumToolMaterialPlatinum).setUnlocalizedName("platinumpickaxe");
+		PlatinumHoe = new WWCModHoe(2544,EnumToolMaterialPlatinum).setUnlocalizedName("platinumhoe");
+		PlatinumSword = new WWCModSword(2545,EnumToolMaterialPlatinum).setUnlocalizedName("platinumsword");
+		LanguageRegistry.addName(PlatinumAxe, "Platinum Axe");
+		LanguageRegistry.addName(PlatinumShovel, "Platinum Shovel");
+		LanguageRegistry.addName(PlatinumPickaxe, "Platinum Pickaxe");
+		LanguageRegistry.addName(PlatinumHoe, "Platinum Hoe");
+		LanguageRegistry.addName(PlatinumSword, "Platinum Sword");
+		
+		GoldAxe = new WWCModAxe(2546,EnumToolMaterialGold).setUnlocalizedName("goldaxe");
+		GoldShovel = new WWCModShovel(2547,EnumToolMaterialGold).setUnlocalizedName("goldshovel");
+		GoldPickaxe = new WWCModPickaxe(2548,EnumToolMaterialGold).setUnlocalizedName("goldpickaxe");
+		GoldHoe = new WWCModHoe(2549,EnumToolMaterialGold).setUnlocalizedName("goldhoe");
+		GoldSword = new WWCModSword(2550,EnumToolMaterialGold).setUnlocalizedName("goldsword");
+		LanguageRegistry.addName(GoldAxe, "GoldAxe");
+		LanguageRegistry.addName(GoldShovel, "Gold Shovel");
+		LanguageRegistry.addName(GoldPickaxe, "Gold Pickaxe");
+		LanguageRegistry.addName(GoldHoe, "Gold Hoe");
+		LanguageRegistry.addName(GoldSword, "Gold Sword");
 	//crafting
 		GameRegistry.addRecipe(new ItemStack(MithrilAxe,1), new Object[]{
 			"MM ","MS "," S ",'M',mithril, 'S',Item.stick,});
