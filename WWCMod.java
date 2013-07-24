@@ -59,6 +59,10 @@ public class WWCMod {
 	//anvil
 	public static Block Anvil;
 	public static Item IronToolParts;
+	public static Item IronBlade;
+	public static Item IronHilt;
+	public static Item IronGuard;
+	public static Item IronSheild;
 	public static Item IronWeaponParts;
 	public static Item IronAxe;
 	public static Item IronShovel;
@@ -67,6 +71,10 @@ public class WWCMod {
 	public static Item IronSword;
 	public static Item IronHammer;
 	public static Item SteelToolParts;
+	public static Item SteelBlade;
+	public static Item SteelHilt;
+	public static Item SteelGuard;
+	public static Item SteelSheild;
 	public static Item SteelWeaponParts;
 	public static Item SteelAxe;
 	public static Item SteelShovel;
@@ -80,6 +88,10 @@ public class WWCMod {
 	//experts anvil
 	public static Block ExpertsAnvil;
 	public static Item BronzeToolParts;
+	public static Item BronzeBlade;
+	public static Item BronzeHilt;
+	public static Item BronzeGuard;
+	public static Item BronzeSheild;
 	public static Item BronzeWeaponParts;
 	public static Item BronzeAxe;
 	public static Item BronzeShovel;
@@ -88,6 +100,10 @@ public class WWCMod {
 	public static Item BronzeSword;
 	public static Item BronzeHammer;
 	public static Item PlatinumToolParts;
+	public static Item PlatinumBlade;
+	public static Item PlatinumHilt;
+	public static Item PlatinumGuard;
+	public static Item PlatinumSheild;
 	public static Item PlatinumWeaponParts;
 	public static Item PlatinumAxe;
 	public static Item PlatinumShovel;
@@ -96,6 +112,10 @@ public class WWCMod {
 	public static Item PlatinumSword;
 	public static Item PlatinumHammer;
 	public static Item GoldToolParts;
+	public static Item GoldBlade;
+	public static Item GoldHilt;
+	public static Item GoldGuard;
+	public static Item GoldSheild;
 	public static Item GoldWeaponParts;
 	public static Item GoldAxe;
 	public static Item GoldShovel;
@@ -105,6 +125,10 @@ public class WWCMod {
 	public static Item GoldHammer;
 	public static Item TitaniumHammer;
 	public static Item MithrilToolParts;
+	public static Item MithrilBlade;
+	public static Item MithrilHilt;
+	public static Item MithrilGuard;
+	public static Item MithrilSheild;
 	public static Item MithrilWeaponParts;
 	public static Item MithrilTools;
 	public static Item MithrilWeapons;
@@ -113,6 +137,10 @@ public class WWCMod {
 	public static Block MatersAnvil;
 	public static Item OrichalcumHammer;
 	public static Item OrichalcumToolParts;
+	public static Item OrichalcumBlade;
+	public static Item OrichalcumHilt;
+	public static Item OrichalcumGuard;
+	public static Item OrichalcumSheild;
 	public static Item OrichalcumWeaponParts;
 	public static Item OrichalcumTools;
 	public static Item OrichalcumWeapons;
