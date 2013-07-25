@@ -96,6 +96,7 @@ public class WWCMod {
 	public static Item PlatinumBlade;
 	public static Item PlatinumHilt;
 	public static Item PlatinumGuard;
+	public static Item PlatinumSheild;
 	public static Item PlatinumAxe;
 	public static Item PlatinumShovel;
 	public static Item PlatinumPickaxe;
@@ -341,7 +342,50 @@ public void preInit(FMLInitializationEvent event){
 		LanguageRegistry.addName(SteelGuard, "Steel Guard");
 		LanguageRegistry.addName(SteelSheild, "Steel Sheild");
 		
+		BronzeBlade = new Parts(2559).setUnlocalizedName("bronzeblade");
+		BronzeHilt = new Parts(2560).setUnlocalizedName("bronzehilt");
+		BronzeGuard = new Parts(2561).setUnlocalizedName("bronzeguard");
+		BronzeSheild = new Parts(2562).setUnlocalizedName("bronzesheild");
+		LanguageRegistry.addName(BronzeBlade, "Bronze Blade");
+		LanguageRegistry.addName(BronzeHilt, "Bronze Hilt");
+		LanguageRegistry.addName(BronzeGuard, "Bronze Guard");
+		LanguageRegistry.addName(BronzeSheild, "Bronze Sheild");
 		
+		PlatinumBlade = new Parts(2563).setUnlocalizedName("platinumblade");
+		PlatinumHilt = new Parts(2564).setUnlocalizedName("platinumhilt");
+		PlatinumGuard = new Parts(2565).setUnlocalizedName("platinumguard");
+		PlatinumSheild = new Parts(2566).setUnlocalizedName("platinumsheild");
+		LanguageRegistry.addName(PlatinumBlade, "Platinum Blade");
+		LanguageRegistry.addName(PlatinumHilt, "Platinum Hilt");
+		LanguageRegistry.addName(PlatinumGuard, "Platinum Guard");
+		LanguageRegistry.addName(PlatinumSheild, "Platinum Sheild");
+		
+		GoldBlade = new Parts(2567).setUnlocalizedName("goldblade");
+		GoldHilt = new Parts(2568).setUnlocalizedName("goldhilt");
+		GoldGuard = new Parts(2569).setUnlocalizedName("goldguard");
+		GoldSheild = new Parts(2570).setUnlocalizedName("goldsheild");
+		LanguageRegistry.addName(GoldBlade, "Gold Blade");
+		LanguageRegistry.addName(GoldHilt, "Gold Hilt");
+		LanguageRegistry.addName(GoldGuard, "Gold Guard");
+		LanguageRegistry.addName(GoldSheild, "Gold Sheild");
+		
+		MithrilBlade = new Parts(2571).setUnlocalizedName("mithrilblade");
+		MithrilHilt = new Parts(2572).setUnlocalizedName("mithrilhilt");
+		MithrilGuard = new Parts(2573).setUnlocalizedName("mithrilguard");
+		MithrilSheild = new Parts(2574).setUnlocalizedName("mithrilsheild");
+		LanguageRegistry.addName(MithrilBlade, "Mithril Blade");
+		LanguageRegistry.addName(MithrilHilt, "Mithril Hilt");
+		LanguageRegistry.addName(MithrilGuard, "Mithril Guard");
+		LanguageRegistry.addName(MithrilSheild, "Mithril Sheild");
+		
+		OrichalcumBlade = new Parts(2575).setUnlocalizedName("orichalcumblade");
+		OrichalcumHilt = new Parts(2576).setUnlocalizedName("orichalcumhilt");
+		OrichalcumGuard = new Parts(2577).setUnlocalizedName("orichalcumguard");
+		OrichalcumSheild = new Parts(2578).setUnlocalizedName("orichalcumsheild");
+		LanguageRegistry.addName(OrichalcumBlade, "Orichalcum Blade");
+		LanguageRegistry.addName(OrichalcumHilt, "Orichalcum Hilt");
+		LanguageRegistry.addName(OrichalcumGuard, "Orichalcum Guard");
+		LanguageRegistry.addName(OrichalcumSheild, "Orichalcum Sheild");
 	//crafting
 		GameRegistry.addRecipe(new ItemStack(MithrilAxe,1), new Object[]{
 			"MM ","MS "," S ",'M',mithril, 'S',Item.stick,});
