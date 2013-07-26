@@ -408,6 +408,17 @@ public void preInit(FMLInitializationEvent event){
 			"OO "," S "," S ",'O',orichalcum, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumSword,1), new Object[]{
 			" O "," O "," S ",'O',orichalcum, 'S',Item.stick,});
+		
+		GameRegistry.addRecipe(new ItemStack(SteelBlade,3), new Object[]{
+			"S  "," S ","  S",'S',steel});
+		GameRegistry.addRecipe(new ItemStack(BronzeBlade,3), new Object[]{
+			"B  "," B ","  B",'B',bronze});
+		GameRegistry.addRecipe(new ItemStack(PlatinumBlade,3), new Object[]{
+			"P  "," P ","  P",'P',platinum});
+		GameRegistry.addRecipe(new ItemStack(MithrilBlade,3), new Object[]{
+			"M  "," M ","  M",'M',mithril});
+		GameRegistry.addRecipe(new ItemStack(OrichalcumBlade,3), new Object[]{
+			"O  "," O ","  O",'O',orichalcum});
 	//smelting
 		GameRegistry.addSmelting(copperore.blockID, new ItemStack(copper,1), 2.0F);
 		GameRegistry.addSmelting(tinore.blockID, new ItemStack(tin,1), 2.0F);
