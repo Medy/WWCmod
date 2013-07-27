@@ -388,44 +388,107 @@ public void preInit(FMLInitializationEvent event){
 		LanguageRegistry.addName(OrichalcumSheild, "Orichalcum Sheild");
 	//crafting
 		GameRegistry.addRecipe(new ItemStack(MithrilAxe,1), new Object[]{
-			"MM ","MS "," S ",'M',mithril, 'S',Item.stick,});
+			"MM ","MS "," S ",'M',MithrilBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(MithrilShovel,1), new Object[]{
-			" M "," S "," S ",'M',mithril, 'S',Item.stick,});
+			" M "," S "," S ",'M',MithrilBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(MithrilPickaxe,1), new Object[]{
-			"MMM"," S "," S ",'M',mithril, 'S',Item.stick,});
+			"MMM"," S "," S ",'M',MithrilBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(MithrilHoe,1), new Object[]{
-			"MM "," S "," S ",'M',mithril, 'S',Item.stick,});
+			"MM "," S "," S ",'M',MithrilBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(MithrilSword,1), new Object[]{
-			" M "," M "," S ",'M',mithril, 'S',Item.stick,});
+			" M "," M "," H ",'M',MithrilBlade, 'H',MithrilHilt,});
 		
 		GameRegistry.addRecipe(new ItemStack(OrichalcumAxe,1), new Object[]{
-			"OO ","OS "," S ",'O',orichalcum, 'S',Item.stick,});
+			"OO ","OS "," S ",'O',OrichalcumBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumShovel,1), new Object[]{
-			" O "," S "," S ",'O',orichalcum, 'S',Item.stick,});
+			" O "," S "," S ",'O',OrichalcumBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumPickaxe,1), new Object[]{
-			"OOO"," S "," S ",'O',orichalcum, 'S',Item.stick,});
+			"OOO"," S "," S ",'O',OrichalcumBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumHoe,1), new Object[]{
-			"OO "," S "," S ",'O',orichalcum, 'S',Item.stick,});
+			"OO "," S "," S ",'O',OrichalcumBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumSword,1), new Object[]{
-			" O "," O "," S ",'O',orichalcum, 'S',Item.stick,});
+			" O "," O "," H ",'O',OrichalcumBlade, 'H',OrichalcumHilt,});
 		
+		GameRegistry.addRecipe(new ItemStack(IronAxe,1), new Object[]{
+			"II ","IS "," S ",'I',IronBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(IronShovel,1), new Object[]{
+			" I "," S "," S ",'I',IronBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(IronPickaxe,1), new Object[]{
+			"III"," S "," S ",'I',IronBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(IronHoe,1), new Object[]{
+			"II "," S "," S ",'I',IronBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(IronSword,1), new Object[]{
+			" I "," I "," H ",'I',IronBlade, 'H',IronHilt,});
+		
+		GameRegistry.addRecipe(new ItemStack(SteelAxe,1), new Object[]{
+			"OO ","OS "," S ",'O',SteelBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(SteelShovel,1), new Object[]{
+			" O "," S "," S ",'O',SteelBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(SteelPickaxe,1), new Object[]{
+			"OOO"," S "," S ",'O',SteelBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(SteelHoe,1), new Object[]{
+			"OO "," S "," S ",'O',SteelBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(SteelSword,1), new Object[]{
+			" O "," O "," H ",'O',SteelBlade, 'H',SteelHilt,});
+		
+		GameRegistry.addRecipe(new ItemStack(BronzeAxe,1), new Object[]{
+			"BB ","BS "," S ",'B',BronzeBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(BronzeShovel,1), new Object[]{
+			" B "," S "," S ",'B',BronzeBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(BronzePickaxe,1), new Object[]{
+			"BBB"," S "," S ",'B',BronzeBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(BronzeHoe,1), new Object[]{
+			"BB "," S "," S ",'B',BronzeBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(BronzeSword,1), new Object[]{
+			" B "," B "," H ",'B',BronzeBlade, 'H',BronzeHilt,});
+		
+		GameRegistry.addRecipe(new ItemStack(PlatinumAxe,1), new Object[]{
+			"PP ","PS "," S ",'P',PlatinumBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(PlatinumShovel,1), new Object[]{
+			" P "," S "," S ",'P',PlatinumBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(PlatinumPickaxe,1), new Object[]{
+			"PPP"," S "," S ",'P',PlatinumBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(PlatinumHoe,1), new Object[]{
+			"PP "," S "," S ",'P',PlatinumBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(PlatinumSword,1), new Object[]{
+			" P "," P "," H ",'P',PlatinumBlade, 'H',PlatinumHilt,});
+		
+		GameRegistry.addRecipe(new ItemStack(GoldAxe,1), new Object[]{
+			"GG ","GS "," S ",'G',GoldBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(GoldShovel,1), new Object[]{
+			" G "," S "," S ",'G',GoldBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(GoldPickaxe,1), new Object[]{
+			"GGG"," S "," S ",'G',GoldBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(GoldHoe,1), new Object[]{
+			"GG "," S "," S ",'G',GoldBlade, 'S',Item.stick,});
+		GameRegistry.addRecipe(new ItemStack(GoldSword,1), new Object[]{
+			" G "," G "," H ",'G',GoldBlade, 'H',GoldHilt,});
+		
+		GameRegistry.addRecipe(new ItemStack(IronBlade,3), new Object[]{
+			"I  "," I ","  I",'I',Item.ingotIron});
 		GameRegistry.addRecipe(new ItemStack(SteelBlade,3), new Object[]{
 			"S  "," S ","  S",'S',steel});
 		GameRegistry.addRecipe(new ItemStack(BronzeBlade,3), new Object[]{
 			"B  "," B ","  B",'B',bronze});
 		GameRegistry.addRecipe(new ItemStack(PlatinumBlade,3), new Object[]{
 			"P  "," P ","  P",'P',platinum});
+		GameRegistry.addRecipe(new ItemStack(GoldBlade,3), new Object[]{
+			"G  "," G ","  G",'G',Item.ingotGold});
 		GameRegistry.addRecipe(new ItemStack(MithrilBlade,3), new Object[]{
 			"M  "," M ","  M",'M',mithril});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumBlade,3), new Object[]{
 			"O  "," O ","  O",'O',orichalcum});
 		
+		GameRegistry.addRecipe(new ItemStack(IronHilt,2), new Object[]{
+			"Z  "," I ","  Z",'I',Item.ingotIron, 'Z',Item.stick});
 		GameRegistry.addRecipe(new ItemStack(SteelHilt,2), new Object[]{
 			"Z  "," S ","  Z",'S',steel, 'Z',Item.stick});
 		GameRegistry.addRecipe(new ItemStack(BronzeHilt,2), new Object[]{
 			"Z  "," B ","  Z",'B',bronze, 'Z',Item.stick});
 		GameRegistry.addRecipe(new ItemStack(PlatinumHilt,2), new Object[]{
 			"Z  "," P ","  Z",'P',platinum, 'Z',Item.stick});
+		GameRegistry.addRecipe(new ItemStack(GoldHilt,2), new Object[]{
+			"Z  "," G ","  Z",'G',Item.ingotGold, 'Z',Item.stick});
 		GameRegistry.addRecipe(new ItemStack(MithrilHilt,2), new Object[]{
 			"Z  "," M ","  Z",'M',mithril, 'Z',Item.stick});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumHilt,2), new Object[]{
