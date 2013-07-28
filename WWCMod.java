@@ -386,6 +386,22 @@ public void preInit(FMLInitializationEvent event){
 		LanguageRegistry.addName(OrichalcumHilt, "Orichalcum Hilt");
 		LanguageRegistry.addName(OrichalcumGuard, "Orichalcum Guard");
 		LanguageRegistry.addName(OrichalcumSheild, "Orichalcum Sheild");
+		
+	//hammer
+		IronHammer = new WWCModSword(2579, EnumToolMaterialIron).setUnlocalizedName("ironhammer");
+		SteelHammer = new WWCModSword(2580, EnumToolMaterialSteel).setUnlocalizedName("steelhammer");
+		BronzeHammer = new WWCModSword(2581, EnumToolMaterialBronze).setUnlocalizedName("bronzehammer");
+		PlatinumHammer = new WWCModSword(2582, EnumToolMaterialPlatinum).setUnlocalizedName("platinumhammer");
+		GoldHammer = new WWCModSword(2583, EnumToolMaterialGold).setUnlocalizedName("goldhammer");
+		MithrilHammer = new WWCModSword(2584, EnumToolMaterialMithril).setUnlocalizedName("mithrilhammer");
+		OrichalcumHammer = new WWCModSword(2585, EnumToolMaterialOrichalcum).setUnlocalizedName("orichalcumhammer");
+		LanguageRegistry.addName(IronHammer, "Iron Hammer");
+		LanguageRegistry.addName(SteelHammer, "Steel Hammer");
+		LanguageRegistry.addName(BronzeHammer, "Bronze Hammer");
+		LanguageRegistry.addName(PlatinumHammer, "Platinum Hammer");
+		LanguageRegistry.addName(GoldHammer, "Gold Hammer");
+		LanguageRegistry.addName(MithrilHammer, "Mithril Hammer");
+		LanguageRegistry.addName(OrichalcumHammer, "Orichalcum Hammer");
 	//crafting
 		GameRegistry.addRecipe(new ItemStack(MithrilAxe,1), new Object[]{
 			"MM ","MS "," S ",'M',MithrilBlade, 'S',Item.stick,});
@@ -397,6 +413,8 @@ public void preInit(FMLInitializationEvent event){
 			"MM "," S "," S ",'M',MithrilBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(MithrilSword,1), new Object[]{
 			" M "," M "," H ",'M',MithrilBlade, 'H',MithrilHilt,});
+		GameRegistry.addRecipe(new ItemStack(MithrilHammer,1), new Object[]{
+			"MSM"," S "," S ",'M',MithrilBlade, 'S',Item.stick,});
 		
 		GameRegistry.addRecipe(new ItemStack(OrichalcumAxe,1), new Object[]{
 			"OO ","OS "," S ",'O',OrichalcumBlade, 'S',Item.stick,});
@@ -408,6 +426,8 @@ public void preInit(FMLInitializationEvent event){
 			"OO "," S "," S ",'O',OrichalcumBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(OrichalcumSword,1), new Object[]{
 			" O "," O "," H ",'O',OrichalcumBlade, 'H',OrichalcumHilt,});
+		GameRegistry.addRecipe(new ItemStack(OrichalcumHammer,1), new Object[]{
+			"OSO"," S "," S ",'O',OrichalcumBlade, 'S',Item.stick,});
 		
 		GameRegistry.addRecipe(new ItemStack(IronAxe,1), new Object[]{
 			"II ","IS "," S ",'I',IronBlade, 'S',Item.stick,});
@@ -419,6 +439,8 @@ public void preInit(FMLInitializationEvent event){
 			"II "," S "," S ",'I',IronBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(IronSword,1), new Object[]{
 			" I "," I "," H ",'I',IronBlade, 'H',IronHilt,});
+		GameRegistry.addRecipe(new ItemStack(IronHammer,1), new Object[]{
+			"ISI"," S "," S ",'I',IronBlade, 'S',Item.stick,});
 		
 		GameRegistry.addRecipe(new ItemStack(SteelAxe,1), new Object[]{
 			"OO ","OS "," S ",'O',SteelBlade, 'S',Item.stick,});
@@ -430,6 +452,8 @@ public void preInit(FMLInitializationEvent event){
 			"OO "," S "," S ",'O',SteelBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(SteelSword,1), new Object[]{
 			" O "," O "," H ",'O',SteelBlade, 'H',SteelHilt,});
+		GameRegistry.addRecipe(new ItemStack(SteelHammer,1), new Object[]{
+			"OSO"," S "," S ",'O',SteelBlade, 'S',Item.stick,});
 		
 		GameRegistry.addRecipe(new ItemStack(BronzeAxe,1), new Object[]{
 			"BB ","BS "," S ",'B',BronzeBlade, 'S',Item.stick,});
@@ -441,6 +465,8 @@ public void preInit(FMLInitializationEvent event){
 			"BB "," S "," S ",'B',BronzeBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(BronzeSword,1), new Object[]{
 			" B "," B "," H ",'B',BronzeBlade, 'H',BronzeHilt,});
+		GameRegistry.addRecipe(new ItemStack(BronzeHammer,1), new Object[]{
+			"BSB"," S "," S ",'B',BronzeBlade, 'S',Item.stick,});
 		
 		GameRegistry.addRecipe(new ItemStack(PlatinumAxe,1), new Object[]{
 			"PP ","PS "," S ",'P',PlatinumBlade, 'S',Item.stick,});
@@ -452,6 +478,8 @@ public void preInit(FMLInitializationEvent event){
 			"PP "," S "," S ",'P',PlatinumBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(PlatinumSword,1), new Object[]{
 			" P "," P "," H ",'P',PlatinumBlade, 'H',PlatinumHilt,});
+		GameRegistry.addRecipe(new ItemStack(PlatinumHammer,1), new Object[]{
+			"PSP"," S "," S ",'P',PlatinumBlade, 'S',Item.stick,});
 		
 		GameRegistry.addRecipe(new ItemStack(GoldAxe,1), new Object[]{
 			"GG ","GS "," S ",'G',GoldBlade, 'S',Item.stick,});
@@ -463,6 +491,8 @@ public void preInit(FMLInitializationEvent event){
 			"GG "," S "," S ",'G',GoldBlade, 'S',Item.stick,});
 		GameRegistry.addRecipe(new ItemStack(GoldSword,1), new Object[]{
 			" G "," G "," H ",'G',GoldBlade, 'H',GoldHilt,});
+		GameRegistry.addRecipe(new ItemStack(GoldHammer,1), new Object[]{
+			"GSG"," S "," S ",'G',GoldBlade, 'S',Item.stick,});
 		
 		GameRegistry.addRecipe(new ItemStack(IronBlade,3), new Object[]{
 			"I  "," I ","  I",'I',Item.ingotIron});
