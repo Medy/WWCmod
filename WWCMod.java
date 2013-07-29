@@ -215,8 +215,7 @@ public void preInit(FMLInitializationEvent event){
 
 		orichalcumore= new OrichalcumOre(2506, "orichalcumore").setUnlocalizedName("orichalcumore").setHardness(2.0F).setStepSound(Block.soundMetalFootstep).setResistance(10.0F);
 		GameRegistry.registerBlock(orichalcumore, "orichalcumore");
-		LanguageRegistry.addName(orichalcumore, "Orichalcum Ore");
-		
+		LanguageRegistry.addName(orichalcumore, "Orichalcum Ore");		
 	// ingots items
 		copper = new Ingot(2507).setUnlocalizedName("copper");
 		LanguageRegistry.addName(copper, "Copper Ingot");
@@ -243,8 +242,7 @@ public void preInit(FMLInitializationEvent event){
 		LanguageRegistry.addName(steel, "Steel Ingot");
 		
 		titanium = new Ingot(2515).setUnlocalizedName("titanium");
-		LanguageRegistry.addName(titanium, "Titanium Ingot");
-		
+		LanguageRegistry.addName(titanium, "Titanium Ingot");	
 	//tools
 		MithrilAxe = new WWCModAxe(2516, EnumToolMaterialMithril).setUnlocalizedName("mithrilaxe");
 		MithrilShovel = new WWCModShovel(2517, EnumToolMaterialMithril).setUnlocalizedName("mithrilshovel");
@@ -401,7 +399,14 @@ public void preInit(FMLInitializationEvent event){
 		LanguageRegistry.addName(PlatinumHammer, "Platinum Hammer");
 		LanguageRegistry.addName(GoldHammer, "Gold Hammer");
 		LanguageRegistry.addName(MithrilHammer, "Mithril Hammer");
-		LanguageRegistry.addName(OrichalcumHammer, "Orichalcum Hammer");
+		LanguageRegistry.addName(OrichalcumHammer, "Orichalcum Hammer");	
+	//tools 
+		Pliers = new Parts(2586).setUnlocalizedName("pliers");
+		Wrench = new Parts(2587).setUnlocalizedName("wrench");
+		WireCutters = new Parts(2588).setUnlocalizedName("wirecutters");
+		LanguageRegistry.addName(Pliers, "Pliers");
+		LanguageRegistry.addName(Wrench, "Wrench");
+		LanguageRegistry.addName(WireCutters, "Wire Cutters");
 	//crafting
 		GameRegistry.addRecipe(new ItemStack(MithrilAxe,1), new Object[]{
 			"MM ","MS "," S ",'M',MithrilBlade, 'S',Item.stick,});
